@@ -1,0 +1,23 @@
+{
+    "name": "Custom Waitlist",
+    "short_name": "Custom Waitlist",
+    "description": "Custom Waitlist is a powerful no-code tool that lets startups and creators build branded waitlist pages with custom domains and tracking signups. Perfect for founders, indie hackers and product launches.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#000000",
+    "theme_color": "#000000",
+    "orientation": "portrait",
+    "icons": [
+      {
+        "src": "https://www.customwaitlist.com/assets/2x/icon.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "https://www.customwaitlist.com/assets/2x/icon.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ]
+  }
+  

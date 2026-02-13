@@ -1,0 +1,35 @@
+# llms.txt for https://www.customwaitlist.com
+
+About:
+Custom Waitlist is a powerful no-code tool that lets startups and creators build branded waitlist landing pages with custom domains and signup tracking. Perfect for founders, indie hackers, and product launches.
+
+Highlights:
+- Create and customize a landing page with signup form, custom colors, text, theme, images, and logo.
+- Embed a tweet by ID directly on the page.
+- Assign a unique subdomain or use your own domain.
+- Preview landing pages live in desktop or mobile view before publishing.
+- Generate and share QR codes for social media promotion.
+- Manage waitlist members securely via {domain}/list or {subdomain}.customwaitlist.com/list.
+- Edit published pages anytime via {domain}/edit (login required).
+- Free to use, with affordable Premium options:
+  ✅ Dark theme
+  🎨 More theme images
+  🌐 Use your own custom domain
+  📈 Unlimited waitlist members
+  🚫 Remove the animated “CustomWaitlist” badge
+  💸 Premium pricing: €4.99/month or €59.88/year
+
+Top pages (most useful first):
+- https://www.customwaitlist.com/ — Home: Main customization dashboard to create a new waitlist landing page.
+
+Attribution:
+Developed by (x.com/cris_update) in collaboration with AWB Soft Ltd. (https://awbbusiness.com).
+
+Contact:
+info@awbbusiness.com
+
+Sitemap:
+https://www.customwaitlist.com/sitemap.xml
+
+Access policy:
+See https://www.customwaitlist.com/robots.txt
