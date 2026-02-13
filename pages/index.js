@@ -19,7 +19,7 @@ export default function Home() {
   }
   return (
     <>
-      <SEO title={"1Line"} host={"www.customwaitlist.com"} description={""} image={"https://www.customwaitlist.com/assets/2x/asset3.png"} jsonLd={jsonLd}/>
+      <SEO title={"ONMCP"} host={"www.onmcp.co"} description={""} image={"https://www.customwaitlist.com/assets/2x/asset3.png"} jsonLd={jsonLd}/>
       {/* <Nav/> */}
       <Welcome />
       {/* <VideoInfo/> */}
