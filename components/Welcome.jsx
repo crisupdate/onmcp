@@ -645,7 +645,7 @@ export default function Welcome() {
         <div className={`w-full h-full absolute inset-0 bg-black/80`}></div>
         <div className={`w-full h-16 md:h-8 fixed bottom-0 left-0 bg-gradient-to-t from-black z-20 transition-all transform duration-1000 ${!demo ? "opacity-0 translate-y-16" : "opacity-100 translate-y-0"}`}></div>
         <div className={`absolute bottom-4 xl:bottom-8 right-0 px-8 z-20 transform transition-all w-fit sm:justify-end items-end flex flex-wrap justify-between gap-x-8 gap-y-4 ${demo ? " translate-y-0 duration-1000" : "translate-y-20 duration-500"}`}>
-            <p className="text-zinc-400 text-xs tracking-wide break-words text-right w-full sm:w-fit"><span>All Rights Reserved</span><br/>Copyright © 2026 1line.co</p>
+            <p className="text-zinc-400 text-xs tracking-wide break-words text-right w-full sm:w-fit"><span>All Rights Reserved</span><br/>Copyright © 2026 onmcp.co</p>
             <Link href="https://x.com/intent/follow?screen_name=cris_update" target="_blank" rel="noopener noreferrer" data-show-count="false" className="bg-white hover:bg-black rounded-full py-1.5 px-3 text-sm inline-flex items-center gap-2 hover:text-white transition-all transform"><FaXTwitter size={20}/><span className="font-semibold">@cris_update</span></Link>
             <div className="w-fit"><BrandBadge/></div>
         </div> 
@@ -667,7 +667,7 @@ export default function Welcome() {
                         />    
                     </div>
                      <h1 className="text-3xl font-bold w-full mb-6">
-                        Your <span className="inline animate-gradient bg-gradient-to-r from-zinc-400 via-white to-zinc-400 bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent">Future</span><br/>deserves a <span className="inline animate-gradient bg-gradient-to-r from-zinc-400 via-white to-zinc-400 bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent">Strategy</span>
+                        Your <span className="inline animate-gradient bg-gradient-to-r from-zinc-400 via-white to-zinc-400 bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent">Website</span><br/> as an <span className="inline animate-gradient bg-gradient-to-r from-zinc-400 via-white to-zinc-400 bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent">MCP app</span>
                     </h1>    
                    
                     <p className="text-zinc-300 mb-16">...</p>
@@ -1333,157 +1333,8 @@ export default function Welcome() {
                     {/* {includesPremiumelements && (
                         <PremiumBadge lg={true} className={`scale-[1.6] top-4 right-7 ${demo ? "opacity-100" : "opacity-0"}`}/>
                     )} */}
-                    <div className="overflow-hidden h-full relative">
-                        <div className="absolute top-0 left-0 bg-gradient-to-r from-black pointer-events-none h-full w-[20%] z-40"></div>
-                        <div className="absolute top-0 right-0 bg-gradient-to-l from-black pointer-events-none h-full w-[20%] z-40"></div>
-                        <div id="share-card" className={`fixed bottom-4 right-4 z-[100] transform transition-all duration-700`}>
-                            <div className={`bg-opacity-20 backdrop-blur-md border-2 border-white/30 w-fit h-fit rounded-3xl shadow-md flex flex-col items-center relative ${vars.light_dark === "dark" ? themeTextColor[vars.theme]?.[8] : themeTextColor[vars.theme]?.[7]}`}>
-                            {!showShare && (<button onClick={() => setShowShare(true)} className={`px-4 flex gap-1 items-center py-1 ${vars.light_dark === "dark" ? "text-zinc-200" : "text-zinc-800"} `}><span>Share</span><IoShareSocialOutline /></button>)}
-                            <div className={`flex justify-between gap-2 items-center absolute top-0 right-0 px-2 pt-1.5 w-full ${!showShare && "hidden"}`}>
-                                <p className="text-white font-sens pl-2">Share!</p>
-                                <button onClick={() => setShowShare(false)} className={`bg-white text-red-800 rounded-full px-3 py-0.5 text-xs font-semibold`}>Close</button>
-                            </div>
-                            {showShare && (
-                                <div className={`w-40 mt-2 mx-2`}>
-                                    <QRCodeGenerator thx={true} qrText={vars.status === "draft" ? "https://www.customwaitlist.com" : (`https://${vars.domain || `${vars.subdomain}.customwaitlist.com`}`)} img={vars.img || "https://www.customwaitlist.com/bg3.webp"} btnColor={vars.light_dark === "dark" ? themeTextColor[vars.theme]?.[8] : themeTextColor[vars.theme]?.[7]} previewSrc={previewSrc} setPreviewSrc={setPreviewSrc}/>  
-                                </div>
-                            )}
-                                <div className={`w-full p-2 ${!showShare && "hidden"}`}>
-                                    <a
-                                        href={`https://x.com/intent/tweet?text=${encodeURIComponent(tweetText)}&url=${encodeURIComponent(tweetUrl)}&hashtags=${encodeURIComponent("Innovation,CustomWaitlist,Startups,ComingSoon,Trending")}&related=${encodeURIComponent("cris_update")}`}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className={`px-4 py-2 h-fit w-full rounded-full transition font-semibold inline-flex justify-center items-center gap-1 shrink-0 ${vars.light_dark === "dark" ? "bg-white text-black hover:bg-white/80" : "bg-black text-white hover:bg-black/80"}`}
-                                        >
-                                        <span>Share on </span>
-                                        <FaXTwitter size={20}/>
-                                    </a>     
-                                </div>
-                            </div>
-                        </div>
-                        <div className={`grid grid-cols-1 h-full overflow-y-auto no-scrollbar rounded-[20px]`}>                  
-                            {/* <div className={`absolute top-0 right-[25%] translate-y-[-80%] h-1/2 w-1/2 opacity-25 rounded-full blur-3xl z-[-10] ${isClient && (vars.light_dark === "dark" ? themeTextColor[vars.theme]?.[8] : themeTextColor[vars.theme]?.[7])}`} ></div> */}
-                            <div className={`w-full relative h-full overflow-y-clip py-12 px-8 flex flex-col ${vars.light_dark === "dark" ? "text-zinc-200" : "text-zinc-800"}`}>                    
-                                <div className="w-[4000px] h-fit px-[20%] relative my-60">
-                                    {/* <p className="text-center mb-8">1 Line</p>    
-                                    */}
-                                    <div className="relative w-full h-full mb-6 text-sm">
-                                        <div id="chapter-1" className={`absolute bottom-0 left-[18%] w-[7%] h-fit border-x border-t rounded-t-2xl px-4 pt-2 border-yellow-600`}>
-                                            <div className="absolute -top-3.5 left-0 w-full flex justify-center"><p className="font-mono text-yellow-600 bg-black px-2 py-1">Exploration</p></div>
-                                            <div className="w-full h-fit relative">
-                                                <div className="absolute top-0 left-0 w-full h-8 bg-gradient-to-b from-black pointer-events-none z-10"/>
-                                                <div className="absolute bottom-0 left-0 w-full h-8 bg-gradient-to-t from-black pointer-events-none z-10"/>
-                                                <div className="w-full h-full text-xs text-left max-h-44 overflow-y-auto no-scrollbar relative py-4">
-                                                    <p className="text-gray-400 text-[12px] mb-1">Primary goal:</p>
-                                                    <p>College</p>
-                                                    <p className="text-gray-400 text-[12px] mb-1 mt-4">Secondary goals:</p>
-                                                    <ul className="list-disc list-inside">
-                                                        <li>Travel</li>
-                                                        <li>Learn new skills</li>
-                                                        <li>Meet new people</li>
-                                                        <li>Have fun</li>
-                                                    </ul>
-                                                </div> 
-                                            </div>
-                                        </div>
-
-                                        //has to be fixed
-                                        <div id="chapter-2" className={`absolute bottom-0 left-[25%] w-[10%] h-auto border-x border-t rounded-t-2xl p-4 border-green-600`}>
-                                            <div className="absolute -top-3.5 left-0 w-full flex justify-center"><p className="font-mono text-green-600 bg-black px-2 py-1">Skill Building</p></div>
-                                            <div className="w-full h-auto text-xs text-left">
-                                                <p className="text-gray-400 text-[12px] mb-1">Primary goal:</p>
-                                                <p>College</p>
-                                                <p className="text-gray-400 text-[12px] mb-1 mt-4">Secondary goals:</p>
-                                                <ul className="list-disc list-inside">
-                                                    <li>Travel</li>
-                                                    <li>Learn new skills</li>
-                                                    <li>Meet new people</li>
-                                                    <li>Have fun</li>
-                                                </ul>
-                                            </div>   
-                                        </div>
-                                        <div id="chapter-3" className={`absolute bottom-0 left-[35%] w-[15%] h-auto border-x border-t rounded-t-2xl p-4 border-violet-600`}>
-                                            <div className="absolute -top-3.5 left-0 w-full flex justify-center"><p className="font-mono text-violet-600 bg-black px-2 py-1">Expansion</p></div>
-                                            <div className="w-full h-auto text-xs text-left">
-                                                <p className="text-gray-400 text-[12px] mb-1">Primary goal:</p>
-                                                <p>College</p>
-                                                <p className="text-gray-400 text-[12px] mb-1 mt-4">Secondary goals:</p>
-                                                <ul className="list-disc list-inside">
-                                                    <li>Travel</li>
-                                                    <li>Learn new skills</li>
-                                                    <li>Meet new people</li>
-                                                    <li>Have fun</li>
-                                                </ul>
-                                            </div>   
-                                        </div>
-                                        <div id="chapter-4" className={`absolute bottom-0 left-[50%] w-[15%] h-auto border-x border-t rounded-t-2xl p-4 border-blue-600`}>
-                                            <div className="absolute -top-3.5 left-0 w-full flex justify-center"><p className="font-mono text-blue-600 bg-black px-2 py-1">Mastery</p></div>
-                                            <div className="w-full h-auto text-xs text-left">
-                                                <p className="text-gray-400 text-[12px] mb-1">Primary goal:</p>
-                                                <p>College</p>
-                                                <p className="text-gray-400 text-[12px] mb-1 mt-4">Secondary goals:</p>
-                                                <ul className="list-disc list-inside">
-                                                    <li>Travel</li>
-                                                    <li>Learn new skills</li>
-                                                    <li>Meet new people</li>
-                                                    <li>Have fun</li>
-                                                </ul>
-                                            </div>   
-                                        </div>
-                                        <div id="chapter-4" className={`absolute bottom-0 left-[65%] w-[35%] h-auto border-x border-t rounded-t-2xl p-4 border-cyan-600`}>
-                                            <div className="absolute -top-3.5 left-0 w-full flex justify-center"><p className="font-mono text-cyan-600 bg-black px-2 py-1">Legacy</p></div>
-                                            <div className="w-full h-auto text-xs text-left">
-                                                <p className="text-gray-400 text-[12px] mb-1">Primary goal:</p>
-                                                <p>College</p>
-                                                <p className="text-gray-400 text-[12px] mb-1 mt-4">Secondary goals:</p>
-                                                <ul className="list-disc list-inside">
-                                                    <li>Travel</li>
-                                                    <li>Learn new skills</li>
-                                                    <li>Meet new people</li>
-                                                    <li>Have fun</li>
-                                                </ul>
-                                            </div>   
-                                        </div>
-                                    </div>
-                                    <div className={`text-center w-full h-1 bg-white rounded-full relative grid grid-cols-10`}>
-                                        <div className="absolute top-0 left-[calc(22%-2px)] w-5 h-5 border-4 border-white bg-black rounded-full -translate-y-2 z-20"/>
-                                        <div className="absolute top-0 left-0 text-center w-[22%] h-1 bg-gray-600 rounded-full">
-                                            <div className="w-0.5 h-28 -translate-y-8 bg-gradient-to-b from-white rounded-t-full relative my-4">
-                                                <p className="text-xs text-white absolute -bottom-10 left-[-20px] transform w-auto text-center">Birth: 07.09.2003</p>
-                                            </div>
-                                        </div>
-                                        {[...Array(10)].map((_, i) => (
-                                            <div key={i} className={`h-auto w-full relative py-4`}>
-                                                <div className="w-full h-20 relative grid grid-cols-10">
-                                                    {[...Array(9)].map((_, ii) => (
-                                                        <div key={ii} className={`h-10 w-full relative`}>
-                                                            <div className="w-0.5 h-full bg-gradient-to-b from-gray-600 rounded-t-full relative ml-auto">
-                                                                <p className="text-[12px] text-white absolute -bottom-6 left-[-20px] transform w-10 text-center">{i*10+(ii+1)}</p>
-                                                            </div>
-                                                        </div>
-                                                    ))}
-                                                    <div className="w-0.5 h-28 -translate-y-8 bg-gradient-to-b from-white rounded-t-full relative ml-auto">
-                                                        <p className="text-xs text-white absolute -bottom-10 left-[-40px] transform w-20 text-center"><span>{(i+1)*10} years old</span><br/><span>Year: {2003+(i+1)*10}</span></p>
-                                                    </div>
-                                                </div>
-                                                
-                                            </div>
-                                        ))}
-                                    </div>
-                                    <div className="relative w-full h-full mt-24 text-sm">
-                                        <div id="reminding-1" className={`absolute top-0 left-[23%] w-auto h-auto border-l border-b rounded-bl-2xl px-4 pb-4 pt-20 border-gray-400`}>
-                                            {/* <div className="absolute -top-3.5 left-0 w-full flex justify-center"><p className="font-mono text-yellow-600 bg-black px-2 py-1">Exploration</p></div> */}
-                                            <div className="w-full h-auto text-xs text-left">
-                                                <p className="text-gray-400 text-[12px] mb-1">Reminding:</p>
-                                                <p>College</p>
-                                            </div>   
-                                        </div>
-                                    </div>
-                                </div>
-                               
-                            </div>
-                    
-                        </div>
+                    <div className="overflow-hidden h-full relative flex items-center justify-center">
+                        <input type="text" name="domain" placeholder="Your website link by ex: onmcp.co" value={vars.domain} onChange={handleInputChange} className="w-full max-w-xl rounded-xl px-4 py-2 text-lg bg-white/5 no-scrollbar outline-none text-white"/>
                     </div>
                     
                 </div>     
@@ -1518,7 +1369,7 @@ export default function Welcome() {
                    {/* {!isClient && (
                         <div className="w-1 h-10 rounded-full bg-white animate-spin duration-1000"/>
                     )}                */}
-                    <p className="text-5xl font-bold text-center mb-4 animate-opacityIn delay-500">Welcome to 1Line!</p>
+                    <p className="text-5xl font-bold text-center mb-4 animate-opacityIn delay-500">Welcome to ONMCP!</p>
                     <p className="text-zinc-300 text-center text-lg mb-8 animate-opacityIn">Your Life. Structured here.</p>
                     <div className="flex justify-between w-fit mb-16">
                         {/* <button onClick={() => toggleTimer("start")} className="w-full py-2 px-4 rounded-full h-10 shadow-md border border-orange-400/50 bg-orange-500/5 backdrop-blur-md text-orange-400 hover:bg-orange-500/10 text-center">Start Challenge!</button> */}
